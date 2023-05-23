@@ -1,0 +1,81 @@
+* {
+  font-family: "Heebo", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.container-child {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #707070;
+}
+
+.explain > * {
+  margin-bottom: 30px;
+}
+
+.head {
+  color: #000000;
+  font-size: 48px;
+}
+
+span {
+  color: #f50b33;
+}
+
+.content {
+  color: #2c2c2c;
+  font-size: 20px;
+}
+
+form > * {
+  display: block;
+}
+
+.inputHeader {
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+input {
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: #f50b33 3px solid;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submitForm {
+  background-color: #f50b33;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 2px 30px;
+  margin-top: 30px;
+  border: none;
+}
+
+.submitForm:hover {
+  cursor: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+  .container > * {
+    width: 100%;
+  }
+}
